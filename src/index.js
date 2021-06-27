@@ -3,7 +3,6 @@ import Phaser from 'phaser';
 let mirrorArray = [];
 
 let laserGraphic;
-//let laserDirection = 1; 
 
 const makeLaser = ( x1, y1, x2, y2 ) => { new Phaser.Geom.Line( x1, y1, x2, y2 ) }
 
@@ -179,7 +178,7 @@ class MyGame extends Phaser.Scene
       makeBeam(mirrorArray);
     }
 
-    // draws the beam. this seems to be working right. The beam isn't resetting correctly for some reason.
+    // TODO:   did I fix this? draws the beam. this seems to be working right. The beam isn't resetting correctly for some reason.
     const makeBeam = (pointArray) => {
       for ( let x = 0; x < pointArray.length - 1; x++ ) {
         console.log(x);
